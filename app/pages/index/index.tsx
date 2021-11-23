@@ -1,6 +1,11 @@
 import { Link } from "remix";
 import styles from "./styles.css";
 
+const date = new Date();
+const year = date.getFullYear();
+const month = (date.getMonth() + 1).toString().padStart(2, "0");
+const day = date.getDate();
+
 export default function IndexPage() {
   return (
     <div className="container">
@@ -9,9 +14,9 @@ export default function IndexPage() {
           <h1>
             <Link to="/"> Tim Chang</Link>
           </h1>
-          <p>Software Developer</p>
           <p>New York City</p>
         </div>
+        <time>{`${month}.${day}.${year}`}</time>
       </header>
       <section>
         <h2>About</h2>
@@ -61,11 +66,26 @@ export default function IndexPage() {
           </li>
         </ul>
       </section>
-      <section>
+      <section className="contact">
         <h2>Contact</h2>
+        <p>Learning from and sharing stories.</p>
         <ul>
-          <li>@timcchang</li>
-          <li>timchang@hey.com</li>
+          <li>
+            <div>Twitter</div>
+            <a
+              href="https://twitter.com/timcchang"
+              target="_blank"
+              rel="noreferer"
+            >
+              @timcchang
+            </a>
+          </li>
+          <li>
+            <div>Email</div>
+            <a href="mailto:timchang@hey.com" target="_blank" rel="noreferer">
+              timchang@hey.com
+            </a>
+          </li>
         </ul>
       </section>
     </div>

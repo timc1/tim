@@ -5,6 +5,14 @@
 
 .container header {
   margin-bottom: calc(var(--unit) * 10);
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+}
+
+.container header time {
+  color: rgba(var(--dim) / 25%);
+  font-size: 14px;
 }
 
 .container section > p {
@@ -30,7 +38,7 @@
   display: grid;
 }
 
-.work a {
+section a {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: rgba(var(--dim) / 10%);
@@ -38,10 +46,19 @@
   transition: text-decoration-color 100ms;
 }
 
-.work a:hover {
-  text-decoration-color: rgba(var(--dim) / 60%);
+section a:hover {
+  text-decoration-color: rgba(var(--dim) / 40%);
 }
 
 .work p {
   font-family: var(--fontSerif);
+}
+
+.contact ul li {
+  display: grid;
+  grid-template-columns: clamp(8em, 20vw, 9em) 1fr;
+}
+
+.contact ul li div:first-of-type {
+  color: rgba(var(--dim) / 60%);
 }

@@ -36,3 +36,11 @@ table {
 textarea {
   white-space: revert;
 }
+
+a {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: auto;
+}

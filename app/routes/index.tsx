@@ -1,18 +1,17 @@
-import type { MetaFunction } from "remix";
+import type { LinksFunction, MetaFunction } from "remix";
+import IndexPage from "~/pages/index";
 
-// https://remix.run/api/conventions#meta
+export let links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: IndexPage.styles }];
+};
+
 export let meta: MetaFunction = () => {
   return {
-    title: "Remix Starter",
-    description: "Welcome to remix!",
+    title: "Tim Chang · Home",
+    description: "Software Developer in New York City",
   };
 };
 
-// https://remix.run/guides/routing#index-routes
 export default function Index() {
-  return (
-    <>
-      <h1>Tim Chang</h1>
-    </>
-  );
+  return <IndexPage />;
 }

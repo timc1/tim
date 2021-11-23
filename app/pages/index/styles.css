@@ -1,0 +1,47 @@
+.container {
+  max-width: 600px;
+  margin: 3vw auto;
+}
+
+.container header {
+  margin-bottom: calc(var(--unit) * 10);
+}
+
+.container section > p {
+  margin: 1em 0;
+  font-family: var(--fontSerif);
+}
+
+.container section {
+  margin-bottom: calc(var(--unit) * 6);
+}
+
+.container section h2 {
+  margin-bottom: 1.5em;
+}
+
+.work ul {
+  margin: 1.5em 0;
+  display: grid;
+  gap: 1em;
+}
+
+.work ul li {
+  display: grid;
+}
+
+.work a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(var(--dim) / 10%);
+  text-underline-position: under;
+  transition: text-decoration-color 100ms;
+}
+
+.work a:hover {
+  text-decoration-color: rgba(var(--dim) / 60%);
+}
+
+.work p {
+  font-family: var(--fontSerif);
+}

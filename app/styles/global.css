@@ -19,6 +19,8 @@
   --background: 249 249 249;
   --foreground: 53 53 53;
   --dim: 0 0 0;
+
+  --ease: cubic-bezier(0.8, 0, 0.2, 1);
 }
 
 html {
@@ -33,4 +35,9 @@ html {
 
 * {
   color: rgb(var(--foreground));
+}
+
+.container {
+  max-width: 600px;
+  margin: 3vw auto;
 }

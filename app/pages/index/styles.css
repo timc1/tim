@@ -1,10 +1,3 @@
-.container {
-  --ease: cubic-bezier(0.8, 0, 0.2, 1);
-
-  max-width: 600px;
-  margin: 3vw auto;
-}
-
 header {
   margin-bottom: calc(var(--unit) * 10);
   display: grid;

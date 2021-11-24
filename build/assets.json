@@ -1,17 +1,16 @@
 {
-  "version": "257952f2",
+  "version": "b77b5284",
   "entry": {
-    "module": "/build/entry.client-VPQWRQB3.js",
+    "module": "/build/entry.client-PTQ3DTSG.js",
     "imports": [
-      "/build/_shared/chunk-7VN2454E.js",
-      "/build/_shared/chunk-E7VMOUYL.js"
+      "/build/_shared/chunk-7PEK7ZC6.js"
     ]
   },
   "routes": {
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-665FGTEP.js",
+      "module": "/build/root-2PKKBKD5.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": true,
@@ -21,9 +20,9 @@
       "id": "routes/buildanevent",
       "parentId": "root",
       "path": "buildanevent",
-      "module": "/build/routes/buildanevent-6K43NVRD.js",
+      "module": "/build/routes/buildanevent-SWZQWCOV.js",
       "imports": [
-        "/build/_shared/chunk-GDUTRP3E.js"
+        "/build/_shared/chunk-3DIYNP63.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -34,9 +33,9 @@
       "id": "routes/clips",
       "parentId": "root",
       "path": "clips",
-      "module": "/build/routes/clips-IETLOVPV.js",
+      "module": "/build/routes/clips-DE6MPRSQ.js",
       "imports": [
-        "/build/_shared/chunk-GDUTRP3E.js"
+        "/build/_shared/chunk-3DIYNP63.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -47,12 +46,12 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-YZOJLBHI.js",
+      "module": "/build/routes/index-Y5QLAYFR.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-257952F2.js"
+  "url": "/build/manifest-B77B5284.js"
 }

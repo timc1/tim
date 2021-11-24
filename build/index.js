@@ -19,6 +19,18 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
 var __export = (target, all) => {
   __markAsModule(target);
   for (var name in all)
@@ -180,21 +192,25 @@ __export(buildanevent_exports, {
 
 // app/components/posts/PostContent.tsx
 var import_react = __toModule(require("react"));
+var import_remix3 = __toModule(require("remix"));
 
 // app/components/posts/styles.css
-var styles_default = "/build/_assets/styles-4OK6CCL4.css";
+var styles_default = "/build/_assets/styles-IIDYNWDP.css";
 
 // app/components/posts/PostContent.tsx
 function PostContent({ children }) {
-  return /* @__PURE__ */ import_react.default.createElement("main", null, children);
+  return /* @__PURE__ */ import_react.default.createElement("main", null, /* @__PURE__ */ import_react.default.createElement("header", null, /* @__PURE__ */ import_react.default.createElement(import_remix3.Link, {
+    to: "/"
+  }, "Back")), children);
 }
 PostContent.styles = styles_default;
 
 // app/components/posts/Heading.tsx
 var import_react2 = __toModule(require("react"));
-function Heading({ element, children }) {
+function Heading(_a) {
+  var _b = _a, { element, children } = _b, rest = __objRest(_b, ["element", "children"]);
   let Tag = element || "p";
-  return /* @__PURE__ */ import_react2.default.createElement(Tag, null, children);
+  return /* @__PURE__ */ import_react2.default.createElement(Tag, __spreadValues({}, rest), children);
 }
 
 // app/components/posts/Paragraph.tsx
@@ -334,7 +350,7 @@ var meta2 = () => {
   return {
     title: "Clips",
     description: "macOS menubar app & site for storing and sharing interesting finds from the Internet.",
-    url: "/images/posts/buildanevent/animation-1.gif"
+    url: "/images/posts/clips/illustration.png"
   };
 };
 var links3 = () => {
@@ -441,7 +457,7 @@ function clips_default() {
     id: "emails-and-validation",
     element: "h2"
   }, "Emails and validation"), /* @__PURE__ */ React.createElement(Paragraph, null, "Emails and validations was a fun one to work on. We currently send an email out for actions like login using an email link, reset password, and inviting other people to view a clip. A very simple flow for an invitation would go something like:"), /* @__PURE__ */ React.createElement("ol", null, /* @__PURE__ */ React.createElement("li", null, "A user creates a clip and adds me@timcchang.com"), /* @__PURE__ */ React.createElement("li", null, "A clip invitation would be created on the server under the email with a unique token"), /* @__PURE__ */ React.createElement("li", null, "An email would get sent with a url like https://getclips.app/invitations/clip?email=me@timcchang.com&clipId=12345678&token=987654321"), /* @__PURE__ */ React.createElement("li", null, "This link would navigate to a basic Next route, /invitations/:type, where the client would then parse and make a request to ensure that the params match what is on the server. The database would then be updated with the relevant invitation."), /* @__PURE__ */ React.createElement("li", null, "Once the request is successful, we can redirect the user to the intended clip route and all should be good.")), /* @__PURE__ */ React.createElement(Paragraph, null, "Alright let's talk about some other small, fun things."), /* @__PURE__ */ React.createElement(Heading, {
-    id: "theming-views-virtualized-list",
+    id: "theming-views-virtualized-lists",
     element: "h2"
   }, "Theming, view counts, virtualized lists"), /* @__PURE__ */ React.createElement(Paragraph, null, "As with any project, a light and dark theme is always a nice touch. With clips, I went with a simple system, light, and dark option using a barebones theme provider."), /* @__PURE__ */ React.createElement(Image, {
     src: "/images/posts/clips/theme.gif",
@@ -477,7 +493,7 @@ __export(routes_exports, {
 });
 
 // app/pages/index/index.tsx
-var import_remix3 = __toModule(require("remix"));
+var import_remix4 = __toModule(require("remix"));
 
 // app/pages/index/styles.css
 var styles_default2 = "/build/_assets/styles-VI3O72GU.css";
@@ -492,7 +508,7 @@ function IndexPage() {
     className: "container"
   }, /* @__PURE__ */ React.createElement("header", null, /* @__PURE__ */ React.createElement("div", {
     "data-clip": true
-  }, /* @__PURE__ */ React.createElement("h1", null, /* @__PURE__ */ React.createElement(import_remix3.Link, {
+  }, /* @__PURE__ */ React.createElement("h1", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
     to: "/"
   }, " Tim Chang")), /* @__PURE__ */ React.createElement("p", null, "New York City")), /* @__PURE__ */ React.createElement("time", {
     "data-clip": true
@@ -507,9 +523,9 @@ function IndexPage() {
     href: "https://kbar.vercel.app",
     target: "_blank",
     rel: "noreferer"
-  }, "kbar")), /* @__PURE__ */ React.createElement("p", null, "The open source React command menu library")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement("h3", null, /* @__PURE__ */ React.createElement(import_remix3.Link, {
+  }, "kbar")), /* @__PURE__ */ React.createElement("p", null, "The open source React command menu library")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement("h3", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
     to: "/buildanevent"
-  }, "buildanevent.com")), /* @__PURE__ */ React.createElement("p", null, "Simple, fast, modular event builder")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement("h3", null, /* @__PURE__ */ React.createElement(import_remix3.Link, {
+  }, "buildanevent.com")), /* @__PURE__ */ React.createElement("p", null, "Simple, fast, modular event builder")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement("h3", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
     to: "/clips"
   }, "clips")), /* @__PURE__ */ React.createElement("p", null, "macOS menubar app and site for storing things from the Internet")))), /* @__PURE__ */ React.createElement("section", {
     className: "contact",

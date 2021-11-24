@@ -6,7 +6,7 @@ export const meta: MetaFunction = () => {
     title: "Clips",
     description:
       "macOS menubar app & site for storing and sharing interesting finds from the Internet.",
-    url: "/images/posts/buildanevent/animation-1.gif",
+    url: "/images/posts/clips/illustration.png",
   };
 };
 
@@ -322,7 +322,7 @@ export default function () {
         Alright let's talk about some other small, fun things.
       </Paragraph>
 
-      <Heading id="theming-views-virtualized-list" element="h2">
+      <Heading id="theming-views-virtualized-lists" element="h2">
         Theming, view counts, virtualized lists
       </Heading>
 

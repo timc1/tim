@@ -45,21 +45,13 @@ export default function IndexPage() {
           </li>
           <li>
             <h3>
-              <a
-                href="https://buildanevent.com"
-                target="_blank"
-                rel="noreferer"
-              >
-                buildanevent.com
-              </a>
+              <Link to="/buildanevent">buildanevent.com</Link>
             </h3>
             <p>Simple, fast, modular event builder</p>
           </li>
           <li>
             <h3>
-              <a href="https://getclips.app" target="_blank" rel="noreferer">
-                clips
-              </a>
+              <Link to="/clips">clips</Link>
             </h3>
             <p>
               macOS menubar app and site for storing things from the Internet

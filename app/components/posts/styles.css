@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  font-family: var(--fontSans);
+  margin: 2em 0;
+}
+
+ol,
+li,
+p {
+  font-family: var(--fontSerif);
+}
+
+ul,
+ol,
+p {
+  margin: 1em 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 3vw auto;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(var(--dim) / 10%);
+  text-underline-position: under;
+  transition: text-decoration-color 100ms;
+}
+
+a:hover {
+  text-decoration-color: rgba(var(--dim) / 40%);
+}

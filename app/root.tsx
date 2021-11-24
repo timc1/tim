@@ -1,6 +1,5 @@
 import * as React from "react";
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
@@ -14,7 +13,6 @@ import type { LinksFunction } from "remix";
 
 import resetStylesUrl from "~/styles/reset.css";
 import globalStylesUrl from "~/styles/global.css";
-import Footer from "~/components/sections/Footer";
 
 /**
  * The `links` export is a function that returns an array of objects that map to
@@ -28,7 +26,6 @@ export let links: LinksFunction = () => {
   return [
     { rel: "stylesheet", href: resetStylesUrl },
     { rel: "stylesheet", href: globalStylesUrl },
-    { rel: "stylesheet", href: Footer.styles },
   ];
 };
 
@@ -75,12 +72,7 @@ function Document({
 }
 
 function Layout({ children }: React.PropsWithChildren<{}>) {
-  return (
-    <>
-      {children}
-      <Footer />
-    </>
-  );
+  return <>{children}</>;
 }
 
 export function CatchBoundary() {

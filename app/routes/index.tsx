@@ -7,7 +7,7 @@ export let links: LinksFunction = () => {
 
 export let meta: MetaFunction = () => {
   return {
-    title: "Tim Chang · Home",
+    title: "Tim Chang",
     description: "Software Developer in New York City",
   };
 };

@@ -1,41 +1,117 @@
 .container {
+  --ease: cubic-bezier(0.8, 0, 0.2, 1);
+
   max-width: 600px;
   margin: 3vw auto;
 }
 
-.container header {
+header {
   margin-bottom: calc(var(--unit) * 10);
   display: grid;
   grid-template-columns: max-content max-content;
   justify-content: space-between;
 }
 
-.container header time {
+header > div {
+  position: relative;
+}
+
+:root {
+  --angle-start: 355px;
+  --angle-end: 580px;
+}
+
+@keyframes tx {
+  0% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes anim {
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+  }
+}
+
+header [data-clip] {
+  position: relative;
+}
+
+header time {
   color: rgba(var(--dim) / 25%);
   font-size: 14px;
 }
 
-.container section > p {
+header [data-clip]:first-child {
+  animation: tx 600ms var(--ease) backwards 400ms;
+  animation-fill-mode: forwards;
+}
+
+header [data-clip]:nth-child(2) {
+  animation: tx 800ms var(--ease) backwards 400ms;
+  animation-fill-mode: forwards;
+}
+
+header [data-clip]:first-child::before {
+  animation: anim 400ms var(--ease) backwards 400ms;
+  animation-fill-mode: forwards;
+}
+
+header [data-clip]:nth-child(2)::before {
+  animation: anim 400ms var(--ease) backwards 600ms;
+  animation-fill-mode: forwards;
+}
+
+header [data-clip]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(var(--background));
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+div [data-appear] {
+  --step: 1;
+  --delay: 200ms;
+
+  opacity: 0;
+  transform: translateY(8px);
+  animation: appear 500ms var(--ease) backwards
+    calc(var(--step) * var(--delay) + 500ms);
+  animation-fill-mode: forwards;
+}
+
+.about {
+  position: relative;
+}
+
+section {
+  margin-bottom: calc(var(--unit) * 6);
+}
+
+section > p {
   margin: 1em 0;
   font-family: var(--fontSerif);
 }
 
-.container section {
-  margin-bottom: calc(var(--unit) * 6);
-}
-
-.container section h2 {
+section h2 {
   margin-bottom: 1.5em;
-}
-
-.work ul {
-  margin: 1.5em 0;
-  display: grid;
-  gap: 1em;
-}
-
-.work ul li {
-  display: grid;
 }
 
 section a {
@@ -48,6 +124,16 @@ section a {
 
 section a:hover {
   text-decoration-color: rgba(var(--dim) / 40%);
+}
+
+.work ul {
+  margin: 1.5em 0;
+  display: grid;
+  gap: 1em;
+}
+
+.work ul li {
+  display: grid;
 }
 
 .work p {

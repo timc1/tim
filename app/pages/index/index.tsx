@@ -10,15 +10,15 @@ export default function IndexPage() {
   return (
     <div className="container">
       <header>
-        <div>
+        <div data-clip>
           <h1>
             <Link to="/"> Tim Chang</Link>
           </h1>
           <p>New York City</p>
         </div>
-        <time>{`${month}.${day}.${year}`}</time>
+        <time data-clip>{`${month}.${day}.${year}`}</time>
       </header>
-      <section>
+      <section className="about" data-appear>
         <h2>About</h2>
         <p>
           I'm a developer and designer. I value hard work, optimism, and
@@ -31,7 +31,8 @@ export default function IndexPage() {
           learnings.
         </p>
       </section>
-      <section className="work">
+      {/* @ts-ignore */}
+      <section className="work" data-appear style={{ "--step": 2 }}>
         <h2>Ideas</h2>
         <ul>
           <li>
@@ -66,7 +67,8 @@ export default function IndexPage() {
           </li>
         </ul>
       </section>
-      <section className="contact">
+      {/* @ts-ignore */}
+      <section className="contact" data-appear style={{ "--step": 3 }}>
         <h2>Contact</h2>
         <p>Learning from and sharing stories.</p>
         <ul>

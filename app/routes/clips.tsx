@@ -95,6 +95,7 @@ export default function () {
         alt="profile"
         width="3000"
         height="1676"
+        loading="lazy"
       />
 
       <Heading id="idea" element="h2">
@@ -157,6 +158,7 @@ export default function () {
         alt="text clip"
         width="3359"
         height="1841"
+        loading="lazy"
       />
 
       <Paragraph>
@@ -170,6 +172,7 @@ export default function () {
         alt="link clip"
         width="1500"
         height="574"
+        loading="lazy"
       />
 
       <Paragraph>
@@ -183,6 +186,7 @@ export default function () {
         alt="image clip"
         width="1500"
         height="673"
+        loading="lazy"
       />
 
       <Paragraph>
@@ -212,6 +216,7 @@ export default function () {
         alt="editing a clip"
         width="1500"
         height="673"
+        loading="lazy"
       />
 
       <Paragraph>
@@ -236,6 +241,7 @@ export default function () {
         alt="sharing a clip"
         width="1650"
         height="934"
+        loading="lazy"
       />
 
       <Heading id="commenting" element="h2">
@@ -258,6 +264,7 @@ export default function () {
         alt="commenting"
         width="1500  "
         height="547"
+        loading="lazy"
       />
 
       <Heading id="notifications" element="h2">
@@ -278,6 +285,7 @@ export default function () {
         alt="notifications"
         width="1499"
         height="445"
+        loading="lazy"
       />
 
       <Paragraph>
@@ -337,6 +345,7 @@ export default function () {
         alt="theme switching"
         width="1500"
         height="445"
+        loading="lazy"
       />
 
       <Paragraph>
@@ -361,6 +370,7 @@ export default function () {
         alt="virtualized list"
         width="1000"
         height="464"
+        loading="lazy"
       />
 
       <Heading id="menubar-app" element="h2">
@@ -381,6 +391,7 @@ export default function () {
         alt="macOS menubar app"
         width="600"
         height="504"
+        loading="lazy"
       />
 
       <Paragraph>

@@ -34,6 +34,7 @@ header > div {
 
 header [data-clip] {
   position: relative;
+  will-change: clip-path;
 }
 
 header time {

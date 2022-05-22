@@ -123,7 +123,7 @@ section a:hover {
 .work ul {
   margin: 1.5em 0;
   display: grid;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .work ul li {
@@ -132,6 +132,12 @@ section a:hover {
 
 .work p {
   font-family: var(--fontSerif);
+  color: rgba(var(--dim) / 50%)
+}
+
+.contact ul {
+  display: grid;
+  gap: .75em;
 }
 
 .contact ul li {

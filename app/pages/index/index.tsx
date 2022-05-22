@@ -36,6 +36,10 @@ export default function IndexPage() {
         <h2>Ideas</h2>
         <ul>
           <li>
+            <h3>easel</h3>
+            <p>A little canvas for any idea</p>
+          </li>
+          <li>
             <h3>
               <a href="https://kbar.vercel.app" target="_blank" rel="noreferer">
                 kbar
@@ -62,7 +66,6 @@ export default function IndexPage() {
       {/* @ts-ignore */}
       <section className="contact" data-appear style={{ "--step": 3 }}>
         <h2>Contact</h2>
-        <p>Learning from and sharing stories.</p>
         <ul>
           <li>
             <div>Twitter</div>

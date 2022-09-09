@@ -36,6 +36,10 @@ export default function IndexPage() {
         <h2>Ideas</h2>
         <ul>
           <li>
+            <h3>tw</h3>
+            <p>Coming soon to a browser near you…</p>
+          </li>
+          <li>
             <h3>
               <a href="https://goeasel.app" target="_blank" rel="noreferer">
                 easel

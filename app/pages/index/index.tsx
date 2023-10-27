@@ -25,10 +25,9 @@ export default function IndexPage() {
           learning about how things work.
         </p>
         <p>
-          I enjoy the medium between design and engineering – in my spare time
+          I enjoy the medium between design and engineering—in my spare time
           you'll find me experimenting and building apps that take up way too
-          much of my time. This site is home to things I work on and various
-          learnings.
+          much of my time. This site is home to things I work on and learnings.
         </p>
       </section>
       {/* @ts-ignore */}
@@ -36,8 +35,15 @@ export default function IndexPage() {
         <h2>Ideas</h2>
         <ul>
           <li>
-            <h3>tw</h3>
-            <p>Coming soon to a browser near you…</p>
+            <h3>
+              <a href="https://springhq.co" target="_blank" rel="noreferer">
+                spring
+              </a>
+            </h3>
+            <p>
+              A tiny API that enables your users to snapshot and send feedback
+              for your site
+            </p>
           </li>
           <li>
             <h3>
